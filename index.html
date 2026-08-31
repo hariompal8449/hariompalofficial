@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hariom Pal Official</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Loader -->
+
+<div id="loader">
+<div class="loader-circle"></div>
+<h2>Hariom Pal</h2>
+</div>
+
+<!-- Header -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="images/logo.png">
+
+<span>Hariom Pal</span>
+
+</div>
+
+<div class="header-icons">
+
+    <button id="searchBtn">
+        <i class="fas fa-search"></i>
+    </button>
+    
+   <button id="voiceBtn">
+    <i class="fas fa-microphone"></i>
+</button>
+
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
+</div>
+
+<ul class="nav-links" id="nav-links">
+
+<li>
+<select id="languageSwitcher">
+    <option value="en">🇬🇧 English</option>
+    <option value="hi">🇮🇳 हिन्दी</option>
+    <option value="mr">🇮🇳 मराठी</option>
+    <option value="bn">বাংলা</option>
+    <option value="ta">தமிழ்</option>
+    <option value="te">తెలుగు</option>
+    <option value="gu">ગુજરાતી</option>
+    <option value="pa">ਪੰਜਾਬੀ</option>
+    <option value="kn">ಕನ್ನಡ</option>
+    <option value="ml">മലയാളം</option>
+    <option value="ur">اردو</option>
+    <option value="es">Español</option>
+    <option value="fr">Français</option>
+    <option value="de">Deutsch</option>
+    <option value="ru">Русский</option>
+    <option value="ja">日本語</option>
+    <option value="ko">한국어</option>
+    <option value="zh-CN">中文</option>
+    <option value="ar">العربية</option>
+</select>
+</li>
+<li><a href="#home">Home</a></li>
+
+<li class="dropdown">
+    <a href="#">My Gallery ▼</a>
+
+    <ul class="dropdown-menu">
+        <li><a href="gallery1.html">Gallery 1</a></li>
+        <li><a href="gallery2.html">Gallery 2</a></li>
+        <li><a href="gallery3.html">Gallery 3</a></li>
+        <li><a href="gallery4.html">Gallery 4</a></li>
+    </ul>
+</li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#portfolio">Portfolio</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+<li>
+
+<button id="theme-toggle">
+
+<i class="fas fa-moon"></i>
+
+</button>
+
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+<div id="searchBox">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search anything..."
+        autocomplete="off">
+
+    <div id="suggestions"></div>
+    <div id="searchResults"></div>
+</div>
+
+<!-- Hero -->
+
+<section id="home" class="hero" data-search="home">
+
+<div class="hero-text">
+
+<h1>Hi, I'm Hariom Pal</h1>
+
+<h2>
+
+<span id="typing"></span>
+
+</h2>
+
+<p>
+
+Professional YouTube Creator,
+
+Graphic Designer,
+
+Video Editor,
+
+Web Developer
+
+</p>
+
+<a href="#contact" class="btn">
+
+Hire Me
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/profile.jpg">
+
+</div>
+
+</section><!-- ABOUT -->
+<!-- GALLERY -->
+<section id="gallery" class="section" data-search="gallery">
+
+<a href="gallery.html" class="gallery-btn">
+    My Gallery
+</a>
+
+
+<!-- SERVICES -->
+
+<section id="services" class="section" data-search="services">
+
+<h2>My Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fas fa-palette"></i>
+<h3>Graphic Design</h3>
+<p>Logo, Banner, Poster & Thumbnail Design</p>
+</div>
+
+<div class="card">
+<i class="fas fa-video"></i>
+<h3>Video Editing</h3>
+<p>Professional YouTube & Reel Editing</p>
+</div>
+
+<div class="card">
+<i class="fas fa-code"></i>
+<h3>Web Development</h3>
+<p>Modern Responsive Website Design</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio" class="section" data-search="portfolio">
+
+<h2>My Portfolio</h2>
+
+<div class="cards">
+
+<div class="card">
+    <i class="fab fa-youtube youtube-icon"></i>
+    <h3>YouTube Thumbnail</h3>
+    <p>Professional YouTube Thumbnail Design</p>
+</div>
+
+<div class="card">
+    
+    <i class="fas fa-laptop-code website-icon"></i>
+    <h3>Website Design</h3>
+    <p>Modern & Responsive Website Design</p>
+</div>
+
+<div class="card">
+    
+    <i class="fas fa-palette logo-icon"></i>
+    <h3>Logo Design</h3>
+    <p>Creative Logo Design</p>
+    </div>
+    
+    <div class="card">
+      
+    <i class="fas fa-circle-play video-icon"></i>
+
+    <h3>My Videos</h3>
+
+    <p>Watch my latest YouTube videos</p>
+
+    <a 
+    href="https://youtube.com/@hariompaloffical?si=c0ytzoRIgQtx6H3J"
+       target="_blank"
+       class="btn">
+       ▶ Watch Now
+    </a>
+</div>
+</div>
+
+</section>
+</section>
+
+<section id="about" class="section" data-search="about">
+
+<h2>About Me</h2>
+
+<p>
+Hello! I'm <b>Hariom Pal</b>. I am a YouTuber, Graphic Designer,
+Video Editor and Web Developer. I create modern websites,
+creative thumbnails, logos and high-quality videos.
+</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section" data-search="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea rows="5" placeholder="Your Message"></textarea>
+
+<button class="btn">Send Message</button>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="social-icons">
+
+<a href=" https://youtube.com/@hariompaloffical?si=lXQHK3MtlMNdWWE6"target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="https://instagram.com/hariompal2006" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+</div>
+<p> <footer class="footer">
+
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">Terms & Conditions</a>
+        <span>|</span>
+        <a href="#top">Back to Top ↑</a>
+    </div>
+
+    <p>© 2026 Hariom Pal Official. All Rights Reserved.</p>
+
+</footer>
+
+</footer>
+<!-- WhatsApp Button -->
+<a href="https://wa.me/918859899359" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Scroll Top Button -->
+<button id="topBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- JavaScript -->
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+<script>
+tsParticles.load("particles-js",{
+    particles:{
+        number:{value:50},
+        color:{value:"#00d9ff"},
+        links:{enable:true,color:"#00d9ff"},
+        move:{enable:true,speed:1},
+        size:{value:2}
+    }
+});
+
+        
+</script>
+
+<script src="script.js"></script>
+<script>
+const languageSwitcher = document.getElementById("languageSwitcher");
+
+languageSwitcher.addEventListener("change", function () {
+    const lang = this.value;
+    window.location.href =
+    "https://translate.google.com/translate?sl=auto&tl=" +
+    lang +
+    "&u=" +
+    encodeURIComponent(window.location.href);
+});
+</script>
+
+
+</body>
+<div id="particles-js"></div>
+</html>
