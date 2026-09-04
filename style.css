@@ -311,8 +311,25 @@ body.light-mode .nav-links a{
     color:#111827;
 }
 
+
 body.light-mode #theme-toggle{
     color:#111827;
+}
+body.light-mode .service-btn{
+    background:#ffffff;
+    color:#111827;
+    border:2px solid #00d9ff;
+}
+
+body.light-mode .govt-services a{
+    background:#ffffff;
+    color:#111827;
+    border:1px solid #00d9ff;
+}
+
+body.light-mode .govt-services a:hover{
+    background:#00d9ff;
+    color:#ffffff;
 }
 /* =========================
    Mobile Responsive
@@ -1205,3 +1222,41 @@ body{
         opacity:1;
     }
 }
+.service-btn{
+    width:100%;
+    background:#23283b;
+    color:#fff;
+    border:1px solid #00d9ff;
+    border-radius:20px;
+    padding:25px;
+    font-size:24px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 0 15px rgba(0,217,255,.3);
+    transition:0.3s;
+}
+
+.service-btn:hover{
+    background:#00d9ff;
+    color:#111;
+    transform:translateY(-5px);
+}
+
+.govt-services{
+display:none;
+margin-top:10px;
+}
+
+.govt-services a{
+display:block;
+background:#1a1f38;
+color:#fff;
+text-decoration:none;
+padding:12px;
+margin:8px 0;
+border-radius:8px;
+transition:0.3s;
+}
+
+.govt-services a:hover{
+backgro
