@@ -353,3 +353,82 @@ if ("Notification" in window) {
     });
 
 }
+function toggleGovtServices() {
+  var box = document.getElementById("govtServices");
+  var arrow = document.getElementById("arrow");
+
+  if (box.style.display === "block") {
+    box.style.display = "none";
+    arrow.innerHTML = "▼";
+  } else {
+    box.style.display = "block";
+    arrow.innerHTML = "▲";
+  }
+}
+// ==========================
+// AI Chat Support
+// ==========================
+
+const chatToggle = document.getElementById("chatToggle");
+const chatBox = document.getElementById("chatBox");
+const closeChat = document.getElementById("closeChat");
+const chatMessages = document.getElementById("chatMessages");
+
+if(chatToggle){
+   chatToggle.onclick = function () {
+    chatBox.style.display = "block";
+
+    const speech = new SpeechSynthesisUtterance(
+        "नमस्ते! मैं आपकी कैसे सहायता कर सकता हूँ?"
+    );
+
+    speech.lang = "hi-IN";
+    speech.rate = 1;
+    speech.pitch = 1;
+
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(speech);
+};
+
+if(closeChat){
+    closeChat.onclick = () => {
+        chatBox.style.display = "none";
+    };
+}
+
+function aiReply(service){
+
+    let message = "";
+
+    switch(service){
+
+        case "Aadhaar":
+            message = "🪪 Aadhaar Update के लिए <br><a href='https://myaadhaar.uidai.gov.in/' target='_blank'>👉 Open UIDAI</a>";
+            break;
+
+        case "PAN":
+            message = "💳 PAN Card के लिए <br><a href='https://www.protean-tinpan.com/' target='_blank'>👉 Open PAN Portal</a>";
+            break;
+
+        case "Voter":
+            message = "🗳️ Voter ID के लिए <br><a href='https://voters.eci.gov.in/' target='_blank'>👉 Open Voter Portal</a>";
+            break;
+
+        case "Scholarship":
+            message = "🎓 UP Scholarship के लिए <br><a href='https://scholarship.up.gov.in/' target='_blank'>👉 Open Scholarship Portal</a>";
+            break;
+
+        default:
+            message = "😊 मैं आपकी सहायता के लिए तैयार हूँ।";
+    }
+
+      chatMessages.innerHTML += `
+        <p><b>👤 You:</b> ${service}</p>
+        <p><b>🤖 AI:</b> ${message}</p>
+        <hr>
+    `;
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+} // aiReply function end
+
+} // chatToggle if end  
